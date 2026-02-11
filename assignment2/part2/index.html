@@ -1,4 +1,3 @@
-
 <!--
     Name: Lucas
 	File: Index.html
@@ -8,29 +7,66 @@
 -->
 <!doctype html>
 <html lang="en-US">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Planet data table</title>
     <link href="./style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Planet data table</h1>
 
     <table>
-
+        <caption>Data about the planets of our solar system (Planetary facts taken from <a
+                href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+        </caption>
+        <colgroup>
+            <col span="2" />
+            <col class="column-border" />
+            <col span="9" />
+        </colgroup>
         <thead>
-            
-            <tbody>
-
-
-
-            </tbody>
+            <tr>
+                <td colspan="2"></td>
+                <th scope="col">Name</th>
+                <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                <th scope="col">Diameter (km)</th>
+                <th scope="col">Density (kg/m<sup>3</sup>)</th>
+                <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+                <th scope="col">Length of day (hours)</th>
+                <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+                <th scope="col">Mean temperature (°C)</th>
+                <th scope="col">Number of moons</th>
+                <th scope="col">Notes</th>
+            </tr>
 
 
 
         </thead>
 
+        <tbody>
+            <tr>
+                <th rowspan="4" colspan="2">Terrestrial planets</th>
+
+                <th scope="col">Mercury</th>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167</td>
+                <td>0</td>
+                <td>Closest to the Sun</td>
+
+
+            </tr>
+
+
+        </tbody>
     </table>
-  </body>
+</body>
+
 </html>
