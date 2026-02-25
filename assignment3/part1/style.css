@@ -8,13 +8,14 @@ body {
     size: 500px;
     font: 1.2em / 1.5 system-ui;
     background-color: #efefef;
-
+    margin: 0 auto;
 
 }
 
 
 h1 {
     color: darkslategray;
+    
     border: bottom 10px dotted purple;
 
 }
