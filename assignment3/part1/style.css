@@ -1,0 +1,9 @@
+html {
+  background-color: white;
+}
+
+body {
+    padding: 20px;
+    size: 500px;
+  font: 1.2em / 1.5 system-ui;
+}
