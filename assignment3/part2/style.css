@@ -1,21 +1,20 @@
-/* General setup */
-
 @import "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap";
 
 
 html {
-    font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
 }
 
-h1,h2 {
-    font-family: "Roboto", serif;
+h1,
+h2 {
+  font-family: "Roboto", serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
-section h2 + p {
+section h2+p {
   text-indent: 2rem;
 }
 
@@ -28,7 +27,7 @@ body {
   padding: 20px 0;
 }
 
-/* Layout */
+
 
 main {
   display: grid;
@@ -37,7 +36,7 @@ main {
   padding: 20px 0;
 }
 
-/* header and footer */
+
 
 header {
   border-bottom: 5px solid #aa6666;
@@ -70,7 +69,6 @@ li {
   letter-spacing: 0.5px;
 }
 
-/* Solution: Link styling */
 
 a {
   outline: none;
@@ -93,7 +91,7 @@ a:hover {
   color: #773333;
 }
 
-/* Solution: List styling */
+
 
 ul,
 ol {
@@ -108,7 +106,7 @@ ol {
   list-style-type: lower-roman;
 }
 
-/* Solution: Navigation menu styling */
+
 
 nav ul {
   padding-left: 0;
