@@ -5,7 +5,7 @@ html {
 body {
 
     padding: 20px;
-    size: 500px;
+    width: 500px;
     font: 1.2em / 1.5 system-ui;
     background-color: #efefef;
     margin: 0 auto;
@@ -15,8 +15,7 @@ body {
 
 h1 {
     color: darkslategray;
-    
-    border: bottom 10px dotted purple;
+    border-bottom:10px dotted purple;
 
 }
 
