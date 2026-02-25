@@ -3,7 +3,49 @@ html {
 }
 
 body {
+
     padding: 20px;
     size: 500px;
-  font: 1.2em / 1.5 system-ui;
+    font: 1.2em / 1.5 system-ui;
+    background-color: #efefef;
+
+
+}
+
+
+h1 {
+    color: darkslategray;
+    border: bottom 10px dotted purple;
+
+}
+
+h2 {
+    font-style: italic;
+    font-size: 1.5rem;
+
+}
+
+.job-title {
+    color: darkslategray;
+    font-weight: bold;
+    
+}
+
+
+ul {
+  background-color: white;
+  border: 5px solid purple;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+
+a {
+  color: green;
+}
+
+a:hover,
+a:focus {
+  color: darkgreen;
+  text-decoration: none;
 }
