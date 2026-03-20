@@ -1,4 +1,5 @@
 // Complete variable definitions and random functions
+console.log("JS file connected!");
 
 const customName = document.getElementById("custom-name");
 const generateBtn = document.querySelector(".generate");
@@ -9,23 +10,19 @@ function randomValueFromArray(array) {
     return array[random];
 }
 
-// Raw text strings
-const characters = ["Willy the Goblin", "Big Daddy", "Father Christmas"]
-
-const places = ["the soup kitchen", "Disneyland", "the White House"]
-
-const events = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and slithered away"]
-
-
-
 
 function returnRandomStoryString() {
+    const characters = ["Willy the Goblin", "Big Daddy", "Father Christmas"]
+
+    const places = ["the soup kitchen", "Disneyland", "the White House"]
+
+    const events = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and slithered away"]
+
+
+
     const randomCharacter = randomValueFromArray(characters);
     const randomPlace = randomValueFromArray(places);
     const randomEvent = randomValueFromArray(events);
-}
-
-function returnRandomStoryString() {
     let storyText = `It was 94 Fahrenheit outside, so ${randomCharacter} 
     went for a walk. When they got to ${randomPlace}, 
     they stared in horror for a few moments, then ${randomEvent}. 
@@ -39,9 +36,14 @@ function returnRandomStoryString() {
 generateBtn.addEventListener("click", generateStory);
 
 function generateStory() {
+    let newStory = returnRandomStoryString();
+
     if (customName.value !== "") {
         const name = customName.value;
+
+        newStory = newStory.replace("Bob", name)
     }
+
 
     if (document.getElementById("uk").checked) {
         const weight = `${Math.round(300 / 14)} stone`;
@@ -50,7 +52,6 @@ function generateStory() {
         newStory = newStory.replace("94 Fahrenheit", temperature);
     }
 
-    // TODO: replace "" with the correct expression
-    story.textContent = "";
+    story.textContent = newStory;
     story.style.visibility = "visible";
 }
