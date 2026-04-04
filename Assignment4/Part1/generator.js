@@ -1,4 +1,8 @@
-// Complete variable definitions and random functions
+//    Name: Lucas Gilmour
+//    Filename: javascript.js
+//    Current date: 2026-03-20
+//    description: Assignment 4, Story Generator
+
 console.log("JS file connected!");
 
 const customName = document.getElementById("custom-name");
