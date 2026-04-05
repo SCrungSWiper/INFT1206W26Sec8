@@ -20,6 +20,31 @@ const images = [
   { filename: "pic5.jpg", alt: "Large moth on a leaf" },
 ];
 
+const baseURL =
+  "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
+
+
+for (const image of images) {
+  // Create a new image element
+  const newImage = document.createElement("img");
+  // Set the source and alt text for the image
+  newImage.src = `${baseURL}${image.filename}`;
+  newImage.alt = image.alt;
+  // Make the image focusable via the keyboard
+  newImage.tabIndex = "0";
+  // Append the image as a child of the thumbBar
+  thumbBar.appendChild(newImage);
+  // Update the display to show the image full size when a thumb is clicked
+  newImage.addEventListener("click", updateDisplayedImage);
+  // Update the display to show the image full size when the "Enter" key
+  // is pressed after it has been focused
+  newImage.addEventListener("keydown", (e) => {
+    if (e.code === "Enter") {
+      updateDisplayedImage(e);
+    }
+  });
+}
+
 
 function updateDisplayedImage(e) {
   displayedImage.src = e.target.src;
@@ -27,6 +52,8 @@ function updateDisplayedImage(e) {
 }
 
 btn.addEventListener("click", () => {
+    
+  btn.classList.toggle("dark");
   // If the button has a "dark" class set then you will change the text to Lighten and change its functionality
   if (btn.classList.contains("dark")) {
     btn.textContent = "Lighten";
@@ -36,6 +63,5 @@ btn.addEventListener("click", () => {
     btn.textContent = "Darken";
     overlay.style.backgroundColor = "rgb(0 0 0 / 0)";
   }
-  // Toggle the class ready for the next button press
-  btn.classList.toggle("dark");
+  
 });
