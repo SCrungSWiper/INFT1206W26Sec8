@@ -1,7 +1,7 @@
 //    Name: Lucas Gilmour
 //    Filename: main.js
-//    Current date: 2026-04-06
-//    description: Assignment 4, bouncing balls
+//    Current date: 2026-04-08
+//    description: Assignment 4, bouncing balls finished
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
