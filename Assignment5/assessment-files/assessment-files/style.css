@@ -92,7 +92,7 @@ nav a {
   color: black;
 }
 
-div[class="nav"] .search {
+nav .search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -247,4 +247,8 @@ audio {
 
 .comment-container li p:nth-child(2) {
   flex: 5;
+}
+
+.transcript {
+  display: none;
 }

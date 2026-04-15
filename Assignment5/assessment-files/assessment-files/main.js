@@ -1,7 +1,9 @@
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
+const transcript = document.querySelector('.transcript')
 const commentWrapper = document.querySelector('.comment-wrapper');
+const showhideTranscriptBtn = document.querySelector('.show-transcript')
 
 commentWrapper.style.display = 'none';
 
@@ -15,6 +17,19 @@ showHideBtn.onclick = function() {
     commentWrapper.style.display = 'none';
   }
 };
+
+showhideTranscriptBtn.onclick = function() {
+  let buttonText = showhideTranscriptBtn.textContent;
+
+  if (buttonText === 'Click here for a transcript'){
+    showhideTranscriptBtn.textContent = 'Hide Transcript'
+    transcript.style.display = 'block'
+  }
+  else{
+    showhideTranscriptBtn.textContent = 'Click here for a transcript'
+    transcript.style.display = 'none'
+  }
+}
 
 // functionality for adding a new comment via the comments form
 
