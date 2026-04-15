@@ -52,7 +52,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: rgb(162, 255, 162);
+  background-color: white;
 }
 
 article, footer, .secondary {
