@@ -252,3 +252,7 @@ audio {
 .transcript {
   display: none;
 }
+
+.hidden {
+  overflow: hidden;
+}
